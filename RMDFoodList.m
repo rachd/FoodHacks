@@ -7,7 +7,39 @@
 //
 
 #import "RMDFoodList.h"
+#import "RMDFood.h"
+
+@interface RMDFoodList ()
+
+@property (nonatomic, strong) NSMutableArray *allFoodsPrivate;
+
+@end
 
 @implementation RMDFoodList
 
++ (instancetype)sharedStore {
+    static RMDFoodList *sharedStore;
+    if (!sharedStore) {
+        sharedStore = [[self alloc] initPrivate];
+    }
+    return sharedStore;
+}
+
+- (RMDFood *)createFood:(NSString *)name {
+    RMDFood *food = [[RMDFood alloc] initWithName:name];
+    [self.allFoodsPrivate addObject:food];
+    return food;
+}
+
+- (NSArray *)allFoods {
+    return [self.allFoodsPrivate copy];
+}
+
+- (instancetype)initPrivate {
+    self = [super init];
+    if (self) {
+        self.allFoodsPrivate = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
 @end

@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class RMDFood;
+
 @interface RMDFoodList : NSObject
+
+@property (nonatomic, readonly, copy) NSArray *allFoods;
+
++ (instancetype)sharedStore;
+- (RMDFood *)createFood:(NSString *)name;
 
 @end
