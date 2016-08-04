@@ -18,8 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    RMDFoodTableViewController *foodTableVC = [[RMDFoodTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    [self.window setRootViewController:foodTableVC];
+    RMDFoodTableViewController *foodTableVC = [[RMDFoodTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:foodTableVC];
+    [self.window setRootViewController:navController];
     [self.window makeKeyAndVisible];
     return YES;
 }

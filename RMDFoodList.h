@@ -16,5 +16,6 @@
 
 + (instancetype)sharedStore;
 - (RMDFood *)createFood:(NSString *)name;
+- (void)removeFood:(RMDFood *)food;
 
 @end

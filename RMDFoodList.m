@@ -39,7 +39,16 @@
     self = [super init];
     if (self) {
         self.allFoodsPrivate = [[NSMutableArray alloc] init];
+//        for (int i = 0; i < 5; i++) {
+//            RMDFood *food = [[RMDFood alloc] initWithName:@"potato"];
+//            [self.allFoodsPrivate addObject:food];
+//        }
     }
     return self;
 }
+
+- (void)removeFood:(RMDFood *)food {
+    [self.allFoodsPrivate removeObjectIdenticalTo:food];
+}
+
 @end
