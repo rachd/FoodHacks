@@ -16,6 +16,7 @@
 		CC26BCF61CFB677A004A06CF /* RMDFoodList.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26BCF51CFB677A004A06CF /* RMDFoodList.m */; };
 		CC26BCF91CFB6785004A06CF /* RMDFoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26BCF81CFB6785004A06CF /* RMDFoodTableViewController.m */; };
 		CCA23F9A1D52EAD500B40A3E /* FoodListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA23F991D52EAD500B40A3E /* FoodListTests.m */; };
+		CCA23F9C1D55447200B40A3E /* FoodTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA23F9B1D55447200B40A3E /* FoodTableTests.m */; };
 		CCE5F22D1CFE7E8C00E10163 /* RMDFoodDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE5F22C1CFE7E8C00E10163 /* RMDFoodDetailView.m */; };
 		CCE5F2301CFE7E9B00E10163 /* RMDFoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE5F22F1CFE7E9B00E10163 /* RMDFoodDetailViewController.m */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		CC26BCF71CFB6785004A06CF /* RMDFoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDFoodTableViewController.h; sourceTree = "<group>"; };
 		CC26BCF81CFB6785004A06CF /* RMDFoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDFoodTableViewController.m; sourceTree = "<group>"; };
 		CCA23F991D52EAD500B40A3E /* FoodListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodListTests.m; sourceTree = "<group>"; };
+		CCA23F9B1D55447200B40A3E /* FoodTableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableTests.m; sourceTree = "<group>"; };
 		CCE5F22B1CFE7E8C00E10163 /* RMDFoodDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDFoodDetailView.h; sourceTree = "<group>"; };
 		CCE5F22C1CFE7E8C00E10163 /* RMDFoodDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDFoodDetailView.m; sourceTree = "<group>"; };
 		CCE5F22E1CFE7E9B00E10163 /* RMDFoodDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDFoodDetailViewController.h; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				CC26BCD81CFB6749004A06CF /* FoodHacksTests.m */,
 				CCA23F991D52EAD500B40A3E /* FoodListTests.m */,
+				CCA23F9B1D55447200B40A3E /* FoodTableTests.m */,
 				CC26BCDA1CFB6749004A06CF /* Info.plist */,
 			);
 			path = FoodHacksTests;
@@ -316,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC26BCD91CFB6749004A06CF /* FoodHacksTests.m in Sources */,
+				CCA23F9C1D55447200B40A3E /* FoodTableTests.m in Sources */,
 				CCA23F9A1D52EAD500B40A3E /* FoodListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
