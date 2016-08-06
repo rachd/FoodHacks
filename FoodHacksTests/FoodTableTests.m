@@ -26,7 +26,6 @@
 }
 
 - (void)testDidSelectRow {
-    RMDFoodTableViewController *tableView = [[RMDFoodTableViewController alloc] init];
     
 }
 
