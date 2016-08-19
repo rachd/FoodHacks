@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8ED1008CA8510E6F08E5569454A82CBFC3C11274",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8ED1008CA8510E6F08E5569454A82CBFC3C11274" : 0,
+    "359286D58EF46D224681F67E8CCF53D38BCF0350" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "56FFDCAD-FA59-4E3F-A6AF-AFA456AFEB73",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8ED1008CA8510E6F08E5569454A82CBFC3C11274" : "FoodHacks\/",
+    "359286D58EF46D224681F67E8CCF53D38BCF0350" : "FoodHacks\/FoodHacks\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FoodHacks",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FoodHacks.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rachd\/FoodHacks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "359286D58EF46D224681F67E8CCF53D38BCF0350"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rachd\/FoodHacks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8ED1008CA8510E6F08E5569454A82CBFC3C11274"
+    }
+  ]
+}

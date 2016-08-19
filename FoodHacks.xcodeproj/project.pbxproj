@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC26BCC01CFB6749004A06CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26BCBF1CFB6749004A06CF /* main.m */; };
+		CC26BCC31CFB6749004A06CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26BCC21CFB6749004A06CF /* AppDelegate.m */; };
+		CC26BCCB1CFB6749004A06CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC26BCCA1CFB6749004A06CF /* Assets.xcassets */; };
+		CC26BCD91CFB6749004A06CF /* FoodHacksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26BCD81CFB6749004A06CF /* FoodHacksTests.m */; };
+		CC26BCE41CFB6749004A06CF /* FoodHacksUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26BCE31CFB6749004A06CF /* FoodHacksUITests.m */; };
+		CC26BCF31CFB6772004A06CF /* RMDFood.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26BCF21CFB6772004A06CF /* RMDFood.m */; };
+		CC26BCF61CFB677A004A06CF /* RMDFoodList.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26BCF51CFB677A004A06CF /* RMDFoodList.m */; };
+		CC26BCF91CFB6785004A06CF /* RMDFoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26BCF81CFB6785004A06CF /* RMDFoodTableViewController.m */; };
+		CCA23F9A1D52EAD500B40A3E /* FoodListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA23F991D52EAD500B40A3E /* FoodListTests.m */; };
+		CCA23F9C1D55447200B40A3E /* FoodTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA23F9B1D55447200B40A3E /* FoodTableTests.m */; };
+		CCE5F22D1CFE7E8C00E10163 /* RMDFoodDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE5F22C1CFE7E8C00E10163 /* RMDFoodDetailView.m */; };
+		CCE5F2301CFE7E9B00E10163 /* RMDFoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE5F22F1CFE7E9B00E10163 /* RMDFoodDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC26BCD51CFB6749004A06CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC26BCB31CFB6749004A06CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC26BCBA1CFB6749004A06CF;
+			remoteInfo = FoodHacks;
+		};
+		CC26BCE01CFB6749004A06CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC26BCB31CFB6749004A06CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC26BCBA1CFB6749004A06CF;
+			remoteInfo = FoodHacks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC26BCBB1CFB6749004A06CF /* FoodHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC26BCBF1CFB6749004A06CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC26BCC11CFB6749004A06CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC26BCC21CFB6749004A06CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC26BCCA1CFB6749004A06CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC26BCCF1CFB6749004A06CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC26BCD41CFB6749004A06CF /* FoodHacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodHacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC26BCD81CFB6749004A06CF /* FoodHacksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodHacksTests.m; sourceTree = "<group>"; };
+		CC26BCDA1CFB6749004A06CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC26BCDF1CFB6749004A06CF /* FoodHacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodHacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC26BCE31CFB6749004A06CF /* FoodHacksUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodHacksUITests.m; sourceTree = "<group>"; };
+		CC26BCE51CFB6749004A06CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC26BCF11CFB6772004A06CF /* RMDFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDFood.h; sourceTree = "<group>"; };
+		CC26BCF21CFB6772004A06CF /* RMDFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDFood.m; sourceTree = "<group>"; };
+		CC26BCF41CFB677A004A06CF /* RMDFoodList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDFoodList.h; sourceTree = "<group>"; };
+		CC26BCF51CFB677A004A06CF /* RMDFoodList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDFoodList.m; sourceTree = "<group>"; };
+		CC26BCF71CFB6785004A06CF /* RMDFoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDFoodTableViewController.h; sourceTree = "<group>"; };
+		CC26BCF81CFB6785004A06CF /* RMDFoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDFoodTableViewController.m; sourceTree = "<group>"; };
+		CCA23F991D52EAD500B40A3E /* FoodListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodListTests.m; sourceTree = "<group>"; };
+		CCA23F9B1D55447200B40A3E /* FoodTableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableTests.m; sourceTree = "<group>"; };
+		CCE5F22B1CFE7E8C00E10163 /* RMDFoodDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDFoodDetailView.h; sourceTree = "<group>"; };
+		CCE5F22C1CFE7E8C00E10163 /* RMDFoodDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDFoodDetailView.m; sourceTree = "<group>"; };
+		CCE5F22E1CFE7E9B00E10163 /* RMDFoodDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDFoodDetailViewController.h; sourceTree = "<group>"; };
+		CCE5F22F1CFE7E9B00E10163 /* RMDFoodDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDFoodDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC26BCB81CFB6749004A06CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC26BCD11CFB6749004A06CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC26BCDC1CFB6749004A06CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC26BCB21CFB6749004A06CF = {
+			isa = PBXGroup;
+			children = (
+				CC26BCBD1CFB6749004A06CF /* FoodHacks */,
+				CC26BCD71CFB6749004A06CF /* FoodHacksTests */,
+				CC26BCE21CFB6749004A06CF /* FoodHacksUITests */,
+				CC26BCBC1CFB6749004A06CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC26BCBC1CFB6749004A06CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC26BCBB1CFB6749004A06CF /* FoodHacks.app */,
+				CC26BCD41CFB6749004A06CF /* FoodHacksTests.xctest */,
+				CC26BCDF1CFB6749004A06CF /* FoodHacksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC26BCBD1CFB6749004A06CF /* FoodHacks */ = {
+			isa = PBXGroup;
+			children = (
+				CC26BCC11CFB6749004A06CF /* AppDelegate.h */,
+				CC26BCC21CFB6749004A06CF /* AppDelegate.m */,
+				CCE5F2321CFE7EC200E10163 /* FoodModel */,
+				CCE5F2311CFE7EA200E10163 /* RMDFoodDetail */,
+				CC26BCF71CFB6785004A06CF /* RMDFoodTableViewController.h */,
+				CC26BCF81CFB6785004A06CF /* RMDFoodTableViewController.m */,
+				CC26BCCA1CFB6749004A06CF /* Assets.xcassets */,
+				CC26BCCF1CFB6749004A06CF /* Info.plist */,
+				CC26BCBE1CFB6749004A06CF /* Supporting Files */,
+			);
+			path = FoodHacks;
+			sourceTree = "<group>";
+		};
+		CC26BCBE1CFB6749004A06CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC26BCBF1CFB6749004A06CF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC26BCD71CFB6749004A06CF /* FoodHacksTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC26BCD81CFB6749004A06CF /* FoodHacksTests.m */,
+				CCA23F991D52EAD500B40A3E /* FoodListTests.m */,
+				CCA23F9B1D55447200B40A3E /* FoodTableTests.m */,
+				CC26BCDA1CFB6749004A06CF /* Info.plist */,
+			);
+			path = FoodHacksTests;
+			sourceTree = "<group>";
+		};
+		CC26BCE21CFB6749004A06CF /* FoodHacksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC26BCE31CFB6749004A06CF /* FoodHacksUITests.m */,
+				CC26BCE51CFB6749004A06CF /* Info.plist */,
+			);
+			path = FoodHacksUITests;
+			sourceTree = "<group>";
+		};
+		CCE5F2311CFE7EA200E10163 /* RMDFoodDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CCE5F22B1CFE7E8C00E10163 /* RMDFoodDetailView.h */,
+				CCE5F22C1CFE7E8C00E10163 /* RMDFoodDetailView.m */,
+				CCE5F22E1CFE7E9B00E10163 /* RMDFoodDetailViewController.h */,
+				CCE5F22F1CFE7E9B00E10163 /* RMDFoodDetailViewController.m */,
+			);
+			name = RMDFoodDetail;
+			sourceTree = "<group>";
+		};
+		CCE5F2321CFE7EC200E10163 /* FoodModel */ = {
+			isa = PBXGroup;
+			children = (
+				CC26BCF11CFB6772004A06CF /* RMDFood.h */,
+				CC26BCF21CFB6772004A06CF /* RMDFood.m */,
+				CC26BCF41CFB677A004A06CF /* RMDFoodList.h */,
+				CC26BCF51CFB677A004A06CF /* RMDFoodList.m */,
+			);
+			name = FoodModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC26BCBA1CFB6749004A06CF /* FoodHacks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC26BCE81CFB6749004A06CF /* Build configuration list for PBXNativeTarget "FoodHacks" */;
+			buildPhases = (
+				CC26BCB71CFB6749004A06CF /* Sources */,
+				CC26BCB81CFB6749004A06CF /* Frameworks */,
+				CC26BCB91CFB6749004A06CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodHacks;
+			productName = FoodHacks;
+			productReference = CC26BCBB1CFB6749004A06CF /* FoodHacks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC26BCD31CFB6749004A06CF /* FoodHacksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC26BCEB1CFB6749004A06CF /* Build configuration list for PBXNativeTarget "FoodHacksTests" */;
+			buildPhases = (
+				CC26BCD01CFB6749004A06CF /* Sources */,
+				CC26BCD11CFB6749004A06CF /* Frameworks */,
+				CC26BCD21CFB6749004A06CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC26BCD61CFB6749004A06CF /* PBXTargetDependency */,
+			);
+			name = FoodHacksTests;
+			productName = FoodHacksTests;
+			productReference = CC26BCD41CFB6749004A06CF /* FoodHacksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC26BCDE1CFB6749004A06CF /* FoodHacksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC26BCEE1CFB6749004A06CF /* Build configuration list for PBXNativeTarget "FoodHacksUITests" */;
+			buildPhases = (
+				CC26BCDB1CFB6749004A06CF /* Sources */,
+				CC26BCDC1CFB6749004A06CF /* Frameworks */,
+				CC26BCDD1CFB6749004A06CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC26BCE11CFB6749004A06CF /* PBXTargetDependency */,
+			);
+			name = FoodHacksUITests;
+			productName = FoodHacksUITests;
+			productReference = CC26BCDF1CFB6749004A06CF /* FoodHacksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC26BCB31CFB6749004A06CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Rachel Dorn";
+				TargetAttributes = {
+					CC26BCBA1CFB6749004A06CF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					CC26BCD31CFB6749004A06CF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CC26BCBA1CFB6749004A06CF;
+					};
+					CC26BCDE1CFB6749004A06CF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CC26BCBA1CFB6749004A06CF;
+					};
+				};
+			};
+			buildConfigurationList = CC26BCB61CFB6749004A06CF /* Build configuration list for PBXProject "FoodHacks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC26BCB21CFB6749004A06CF;
+			productRefGroup = CC26BCBC1CFB6749004A06CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC26BCBA1CFB6749004A06CF /* FoodHacks */,
+				CC26BCD31CFB6749004A06CF /* FoodHacksTests */,
+				CC26BCDE1CFB6749004A06CF /* FoodHacksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC26BCB91CFB6749004A06CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC26BCCB1CFB6749004A06CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC26BCD21CFB6749004A06CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC26BCDD1CFB6749004A06CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC26BCB71CFB6749004A06CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC26BCC31CFB6749004A06CF /* AppDelegate.m in Sources */,
+				CC26BCF91CFB6785004A06CF /* RMDFoodTableViewController.m in Sources */,
+				CCE5F2301CFE7E9B00E10163 /* RMDFoodDetailViewController.m in Sources */,
+				CC26BCC01CFB6749004A06CF /* main.m in Sources */,
+				CCE5F22D1CFE7E8C00E10163 /* RMDFoodDetailView.m in Sources */,
+				CC26BCF31CFB6772004A06CF /* RMDFood.m in Sources */,
+				CC26BCF61CFB677A004A06CF /* RMDFoodList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC26BCD01CFB6749004A06CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC26BCD91CFB6749004A06CF /* FoodHacksTests.m in Sources */,
+				CCA23F9C1D55447200B40A3E /* FoodTableTests.m in Sources */,
+				CCA23F9A1D52EAD500B40A3E /* FoodListTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC26BCDB1CFB6749004A06CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC26BCE41CFB6749004A06CF /* FoodHacksUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC26BCD61CFB6749004A06CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC26BCBA1CFB6749004A06CF /* FoodHacks */;
+			targetProxy = CC26BCD51CFB6749004A06CF /* PBXContainerItemProxy */;
+		};
+		CC26BCE11CFB6749004A06CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC26BCBA1CFB6749004A06CF /* FoodHacks */;
+			targetProxy = CC26BCE01CFB6749004A06CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CC26BCE61CFB6749004A06CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC26BCE71CFB6749004A06CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC26BCE91CFB6749004A06CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FoodHacks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMD.FoodHacks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC26BCEA1CFB6749004A06CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FoodHacks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMD.FoodHacks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC26BCEC1CFB6749004A06CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FoodHacksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMD.FoodHacksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodHacks.app/FoodHacks";
+			};
+			name = Debug;
+		};
+		CC26BCED1CFB6749004A06CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FoodHacksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMD.FoodHacksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodHacks.app/FoodHacks";
+			};
+			name = Release;
+		};
+		CC26BCEF1CFB6749004A06CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FoodHacksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMD.FoodHacksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FoodHacks;
+			};
+			name = Debug;
+		};
+		CC26BCF01CFB6749004A06CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FoodHacksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RMD.FoodHacksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FoodHacks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC26BCB61CFB6749004A06CF /* Build configuration list for PBXProject "FoodHacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC26BCE61CFB6749004A06CF /* Debug */,
+				CC26BCE71CFB6749004A06CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC26BCE81CFB6749004A06CF /* Build configuration list for PBXNativeTarget "FoodHacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC26BCE91CFB6749004A06CF /* Debug */,
+				CC26BCEA1CFB6749004A06CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC26BCEB1CFB6749004A06CF /* Build configuration list for PBXNativeTarget "FoodHacksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC26BCEC1CFB6749004A06CF /* Debug */,
+				CC26BCED1CFB6749004A06CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC26BCEE1CFB6749004A06CF /* Build configuration list for PBXNativeTarget "FoodHacksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC26BCEF1CFB6749004A06CF /* Debug */,
+				CC26BCF01CFB6749004A06CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC26BCB31CFB6749004A06CF /* Project object */;
+}
