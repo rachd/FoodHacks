@@ -22,7 +22,7 @@
     if (self) {
         self.navigationItem.title = @"My Food List";
         self.navigationItem.leftBarButtonItem = self.editButtonItem;
-        UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addFood:)];
+        UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addFood)];
         self.navigationItem.rightBarButtonItem = addButton;
     }
     return self;
@@ -32,8 +32,14 @@
     [super viewDidLoad];
 }
 
-- (void)addFood:(RMDFood *)food {
-    
+- (void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
+}
+
+- (void)addFood {
+    RMDFood *newFood = [[RMDFoodList sharedStore] createFood:@""];
+    RMDFoodDetailViewController *foodDetailVC = [[RMDFoodDetailViewController alloc] initWithFood:newFood];
+    [self.navigationController pushViewController:foodDetailVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,24 +62,25 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
-        cell.textLabel.text = [[[[RMDFoodList sharedStore] allFoods] objectAtIndex:indexPath.row] name];
-        cell.detailTextLabel.text = @"hello";
     }
+    cell.textLabel.text = [[[[RMDFoodList sharedStore] allFoods] objectAtIndex:indexPath.row] name];
+    cell.detailTextLabel.text = @"hello";
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    if (editingStyle == UITableViewCellEditingStyleDelete) {
-//        NSArray *foodList = [[RMDFoodList sharedStore] allFoods];
-//        RMDFood *food = foodList[indexPath.row];
-//        [[RMDFoodList sharedStore] removeFood:food];
-//        
-//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-//    }
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSArray *foodList = [[RMDFoodList sharedStore] allFoods];
+        RMDFood *food = foodList[indexPath.row];
+        [[RMDFoodList sharedStore] removeFood:food];
+        
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    RMDFoodDetailViewController *foodDetailVC = [[RMDFoodDetailViewController alloc] init];
+    RMDFood *food = [[[RMDFoodList sharedStore] allFoods] objectAtIndex:indexPath.row];
+    RMDFoodDetailViewController *foodDetailVC = [[RMDFoodDetailViewController alloc] initWithFood:food];
     [self.navigationController pushViewController:foodDetailVC animated:YES];
 }
 
