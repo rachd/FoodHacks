@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC2531A11D67F13900A39EF4 /* RMDBarcodeScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2531A01D67F13900A39EF4 /* RMDBarcodeScannerViewController.m */; };
 		CC26BCC01CFB6749004A06CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26BCBF1CFB6749004A06CF /* main.m */; };
 		CC26BCC31CFB6749004A06CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26BCC21CFB6749004A06CF /* AppDelegate.m */; };
 		CC26BCCB1CFB6749004A06CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC26BCCA1CFB6749004A06CF /* Assets.xcassets */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC25319F1D67F13900A39EF4 /* RMDBarcodeScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDBarcodeScannerViewController.h; sourceTree = "<group>"; };
+		CC2531A01D67F13900A39EF4 /* RMDBarcodeScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDBarcodeScannerViewController.m; sourceTree = "<group>"; };
 		CC26BCBB1CFB6749004A06CF /* FoodHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC26BCBF1CFB6749004A06CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC26BCC11CFB6749004A06CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC25319E1D67F10900A39EF4 /* RMDBarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				CC25319F1D67F13900A39EF4 /* RMDBarcodeScannerViewController.h */,
+				CC2531A01D67F13900A39EF4 /* RMDBarcodeScannerViewController.m */,
+			);
+			name = RMDBarcodeScanner;
+			sourceTree = "<group>";
+		};
 		CC26BCB21CFB6749004A06CF = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +169,7 @@
 		CCE5F2311CFE7EA200E10163 /* RMDFoodDetail */ = {
 			isa = PBXGroup;
 			children = (
+				CC25319E1D67F10900A39EF4 /* RMDBarcodeScanner */,
 				CCE5F22B1CFE7E8C00E10163 /* RMDFoodDetailView.h */,
 				CCE5F22C1CFE7E8C00E10163 /* RMDFoodDetailView.m */,
 				CCE5F22E1CFE7E9B00E10163 /* RMDFoodDetailViewController.h */,
@@ -304,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2531A11D67F13900A39EF4 /* RMDBarcodeScannerViewController.m in Sources */,
 				CC26BCC31CFB6749004A06CF /* AppDelegate.m in Sources */,
 				CC26BCF91CFB6785004A06CF /* RMDFoodTableViewController.m in Sources */,
 				CCE5F2301CFE7E9B00E10163 /* RMDFoodDetailViewController.m in Sources */,
