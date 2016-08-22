@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RMDFood.h"
+#import "RMDFoodDetailViewController.h"
 
 @interface RMDFoodDetailView : UIView
 
-@property (nonatomic, strong) UITextField *foodName;
+@property (nonatomic, strong) UITextField *foodNameField;
+
+- (instancetype)initWithFrame:(CGRect)frame food:(RMDFood *)food;
 
 @end

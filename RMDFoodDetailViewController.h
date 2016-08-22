@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RMDFoodDetailView.h"
 
 @interface RMDFoodDetailViewController : UIViewController
+
+- (instancetype)initWithFood:(RMDFood *)food;
 
 @end
